@@ -13,6 +13,6 @@ router.post("/", userController.createUser);
 router.put("/", userController.changeUserStatus);
 
 // Удалить данные
-// router.delete("/", userController.removeUser);
+router.delete("/", userController.removeUser);
 
 module.exports = router;

@@ -22,9 +22,7 @@ app.listen(8080);
 //     "name": "Joanne"
 // }
 //
-// DELETE
-// В Body raw-JSON вписать
+// DELETE - удалить клиента - Body raw-JSON
 // {
-//     "name": "Elena1"
+//     "name": "Eliot"
 // }
-// Удалит name

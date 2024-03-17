@@ -23,11 +23,11 @@ class bankUser {
   }
 
   // Удалить данные
-  // removeUser(req, res) {
-  //   const productName = req.body.name;
-  //   const userList = userModel.deleteByName(productName);
-  //   res.json(jsonView(200, "Success", userList));
-  // }
+  removeUser(req, res) {
+    const userName = req.body.name;
+    const userList = userModel.removeUser(userName);
+    res.json(jsonView(200, "Success = Remove User", userList));
+  }
 }
 
 module.exports = new bankUser();

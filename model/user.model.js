@@ -13,7 +13,6 @@ class User {
         ),
       ])
     );
-
     return userOut;
   }
 
@@ -34,17 +33,12 @@ class User {
     return this.getUserAll();
   }
 
-  // Запрос данных по имени
-  // getByName(name) {
-  //   return userList.find((user) => user.name === name);
-  // }
-
   // Удаление данных
-  // deleteByName(name) {
-  //   const foundIndex = this.#findIndexByName(name);
-  //   userList.splice(foundIndex, 1);
-  //   return userList;
-  // }
+  removeUser(name) {
+    const foundIndex = this.#findIndexByName(name);
+    userList.splice(foundIndex, 1);
+    return this.getUserAll();
+  }
 
   // Поиск index элемента
   #findIndexByName(name) {
