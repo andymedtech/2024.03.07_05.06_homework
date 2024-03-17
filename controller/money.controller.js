@@ -1,11 +1,12 @@
 const moneyModel = require("../model/money.model");
-const jsonView = require("../view/json.view");
+// const jsonView = require("../view/json.view");
+const indexView = require("../view/index.view");
 
 class bankMoney {
   // Получить данные
   getMoney(req, res) {
     const moneyList = moneyModel.getMoney();
-    res.json(jsonView(200, "Success = Get User Money", moneyList));
+    res.end(indexView(moneyList));
   }
 
   // Добавить данные
