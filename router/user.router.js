@@ -4,15 +4,15 @@ const router = new Router();
 const userController = require("../controller/user.controller");
 
 // Получить данные
-router.get("/", userController.getAll);
+router.get("/", userController.getUserAll);
 
 // Добавить данные
-router.post("/", userController.create);
+// router.post("/", userController.createUser);
 
 // Изменить данные
-router.put("/", userController.update);
+// router.put("/", userController.changeUser);
 
 // Удалить данные
-router.delete("/", userController.remove);
+// router.delete("/", userController.removeUser);
 
 module.exports = router;
