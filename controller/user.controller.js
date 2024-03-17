@@ -5,7 +5,7 @@ class bankUser {
   // Получить данные
   getUserAll(req, res) {
     const userList = userModel.getUserAll();
-    res.json(jsonView(200, "Success = User List", userList));
+    res.json(jsonView(200, "Success = Get User List", userList));
   }
 
   // Добавить данные
@@ -16,12 +16,11 @@ class bankUser {
   }
 
   // Изменить данные
-  // changeUser(req, res) {
-  //   const productName = req.body.name;
-  //   // Для простоты добавим к имени "1"
-  //   const userList = userModel.updateByName(productName, productName + "1");
-  //   res.json(jsonView(200, "Success", userList));
-  // }
+  changeUserStatus(req, res) {
+    const userName = req.body.name;
+    const userList = userModel.changeUserStatus(userName, userName + "-VIP");
+    res.json(jsonView(200, "Success = Status User VIP", userList));
+  }
 
   // Удалить данные
   // removeUser(req, res) {

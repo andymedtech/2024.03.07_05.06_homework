@@ -10,7 +10,7 @@ router.get("/", userController.getUserAll);
 router.post("/", userController.createUser);
 
 // Изменить данные
-// router.put("/", userController.changeUser);
+router.put("/", userController.changeUserStatus);
 
 // Удалить данные
 // router.delete("/", userController.removeUser);

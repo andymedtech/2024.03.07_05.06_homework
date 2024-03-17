@@ -17,12 +17,10 @@ app.listen(8080);
 //     "name": "Ryan"
 // }
 //
-// PUT
-// В Body raw-JSON вписать
+// PUT - добавить VIP статус клиента - Body raw-JSON
 // {
-//     "name": "Elena"
+//     "name": "Joanne"
 // }
-// Изменит на name1
 //
 // DELETE
 // В Body raw-JSON вписать

@@ -27,6 +27,13 @@ class User {
     return this.getUserAll();
   }
 
+  // Изменение данных
+  changeUserStatus(name, data) {
+    const foundIndex = this.#findIndexByName(name);
+    userList[foundIndex].name = data;
+    return this.getUserAll();
+  }
+
   // Запрос данных по имени
   // getByName(name) {
   //   return userList.find((user) => user.name === name);
@@ -39,18 +46,10 @@ class User {
   //   return userList;
   // }
 
-  // Изменение данных
-  // updateByName(name, data) {
-  //   const foundIndex = this.#findIndexByName(name);
-  //   // userList[foundIndex] = { ...userList[foundIndex], ...data };
-  //   userList[foundIndex].name = data;
-  //   return userList;
-  // }
-
   // Поиск index элемента
-  // #findIndexByName(name) {
-  //   return userList.findIndex((user) => user.name === name);
-  // }
+  #findIndexByName(name) {
+    return userList.findIndex((user) => user.name === name);
+  }
 }
 
 module.exports = new User();
