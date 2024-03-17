@@ -7,7 +7,7 @@ const userController = require("../controller/user.controller");
 router.get("/", userController.getUserAll);
 
 // Добавить данные
-// router.post("/", userController.createUser);
+router.post("/", userController.createUser);
 
 // Изменить данные
 // router.put("/", userController.changeUser);

@@ -9,11 +9,11 @@ class bankUser {
   }
 
   // Добавить данные
-  // createUser(req, res) {
-  //   const productName = req.body.name;
-  //   const userList = userModel.create(productName);
-  //   res.json(jsonView(200, "Success", userList));
-  // }
+  createUser(req, res) {
+    const newUserName = req.body.name;
+    const userList = userModel.createUser(newUserName);
+    res.json(jsonView(200, "Success = Create New User", userList));
+  }
 
   // Изменить данные
   // changeUser(req, res) {

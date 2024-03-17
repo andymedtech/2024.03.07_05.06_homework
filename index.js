@@ -8,16 +8,14 @@ app.use(router);
 app.listen(8080);
 
 // > запустить node index
-// > в postman http://localhost:8080/user
+// postman http://localhost:8080/user
 //
-// GET - вывод данных
+// GET - клиенты
 //
-// POST
-// В Body raw-JSON вписать
+// POST - добавить клиента - body raw-JSON
 // {
 //     "name": "Ryan"
 // }
-// Добавит новый продукт
 //
 // PUT
 // В Body raw-JSON вписать

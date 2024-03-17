@@ -17,19 +17,19 @@ class User {
     return userOut;
   }
 
+  // Добавление данных
+  createUser(name) {
+    const newUser = {
+      id: Date.now() + Math.ceil(Math.random() * 1000), // генератор id
+      name,
+    };
+    userList.push(newUser);
+    return this.getUserAll();
+  }
+
   // Запрос данных по имени
   // getByName(name) {
   //   return userList.find((user) => user.name === name);
-  // }
-
-  // Добавление данных
-  // create(name) {
-  //   const newUser = {
-  //     id: Date.now() + Math.ceil(Math.random() * 1000), // генератор id
-  //     name,
-  //   };
-  //   userList.push(newUser);
-  //   return userList;
   // }
 
   // Удаление данных
