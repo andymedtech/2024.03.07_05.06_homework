@@ -15,3 +15,57 @@
 1. Результат выгрузить в **GitHub**
 2. Отправить ссылку
 3. Репозиторий **GitHub** должен быть публичным
+
+## Домашняя работа
+
+Запустить **Express**
+
+```console
+node index
+```
+
+1. В **Postman API Platform** [http://localhost:8080/user](http://localhost:8080/user)
+	- **GET** - Список клиентов
+	- **POST** - Добавить клиента
+
+	_body - raw-JSON_ :
+	
+	```console
+	{
+		"name": "Ryan"
+	}
+	```
+	
+	- **PUT** - Добавить VIP статус клиента
+
+	_body - raw-JSON_ :
+	
+	```console
+	{
+		"name": "Joanne"
+	}
+	```
+
+
+	- **DELETE** - Удалить клиента
+
+	_body - raw-JSON_ :
+	
+	```console
+	{
+		"name": "Eliot"
+	}
+	```
+
+2. В **Postman API Platform** [http://localhost:8080/money](http://localhost:8080/money)
+	- **GET** - Список клиентов и денег
+	- **POST** - Добавить (убавить) деньги клиенту
+
+	_body - raw-JSON_ :
+	
+	```console
+	{
+		"name": "Eliot",
+		"money": "200"
+	}
+	```
