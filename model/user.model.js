@@ -21,6 +21,7 @@ class User {
     const newUser = {
       id: Date.now() + Math.ceil(Math.random() * 1000), // генератор id
       name,
+      money: 0,
     };
     userList.push(newUser);
     return this.getUserAll();

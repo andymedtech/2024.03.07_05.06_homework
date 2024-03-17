@@ -1,5 +1,4 @@
 const moneyModel = require("../model/money.model");
-// const jsonView = require("../view/json.view");
 const indexView = require("../view/index.view");
 
 class bankMoney {
@@ -10,11 +9,13 @@ class bankMoney {
   }
 
   // Добавить данные
-  // createUser(req, res) {
-  //   const newUserName = req.body.name;
-  //   const userList = userModel.createUser(newUserName);
-  //   res.json(jsonView(200, "Success = Create New User", userList));
-  // }
+  addMoney(req, res) {
+    const userName = req.body.name;
+    const userMoney = req.body.money;
+    const moneyList = moneyModel.addMoney(userName, userMoney);
+    res.end(indexView(moneyList));
+  }
+
   // Изменить данные
   // changeUserStatus(req, res) {
   //   const userName = req.body.name;

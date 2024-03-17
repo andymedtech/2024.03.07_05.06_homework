@@ -7,7 +7,7 @@ const moneyController = require("../controller/money.controller");
 router.get("/", moneyController.getMoney);
 
 // Добавить данные
-// router.post("/", userController.createUser);
+router.post("/", moneyController.addMoney);
 
 // Изменить данные
 // router.put("/", userController.changeUserStatus);
